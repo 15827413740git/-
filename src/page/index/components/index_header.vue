@@ -5,7 +5,7 @@
             <div class="top_bar">
                 <div class="abs_l"></div>
                 <div class="abs_m">
-                    <a class='title' @click.stop="goTop">知世</a>
+                    <a class='title' @click.stop="goTop">新闻</a>
                 </div>
                 <!--<div class="abs_r">
                     <a class='search_btn' slot='right' @click.stop="$router.push('/search')"></a>

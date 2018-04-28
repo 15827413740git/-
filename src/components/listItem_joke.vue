@@ -3,7 +3,7 @@
         <template v-for="section in itemJson">
             <!-- 视频 -->
             <li v-if="section.playonlineurl">
-                <router-link :to="url(section.url)" class='video'>
+                <a href='javascript:;' class='video'>
                     <div class="video_wrapper">
                         <div class="video_info">
                             <div class="video_title">
@@ -17,10 +17,10 @@
                         </div>
                     </div>
                     <list-info :json='section'></list-info>
-                </router-link>
+                </a>
             </li>
             <li v-else-if="section.url">
-                <router-link :to="url(section.url)" class='oneLarge'>
+                <a href='javascript:;' class='oneLarge'>
                     <div class="news_title">
                         <h3 v-html="section.content"></h3>
                     </div>
@@ -28,17 +28,17 @@
                         <img v-lazy.container='section.url'>
                     </div>
                     <list-info :json='section'></list-info>
-                </router-link>
+                </a>
             </li>
             <li v-else-if='section.content'>
-                <router-link :to="url(section)" class='text'>
+                <a href='javascript:;' class='text'>
                     <h3 v-html="section.content"></h3>
                     <list-info :json='section'></list-info>
-                </router-link>
+                </a>
             </li>
             <!-- 1张大图 -->
             <li v-else-if="!section.thumbnail_pic_s02">
-                <router-link :to="url(section.url)" class='oneLarge'>
+                <a href='javascript:;' class='oneLarge'>
                     <div class="news_title">
                         <h3 v-html="section.title"></h3>
                     </div>
@@ -46,11 +46,11 @@
                         <img v-lazy.container='section.thumbnail_pic_s'>
                     </div>
                     <list-info :json='section'></list-info>
-                </router-link>
+                </a>
             </li>
             <!-- 2张小图 -->
             <li v-else-if="section.thumbnail_pic_s02&&!section.thumbnail_pic_s03">
-                <router-link :to="url(section.url)" class='oneSmall'>
+                <a href='javascript:;' class='oneSmall'>
                     <div class="news_title">
                         <h3 v-html="section.title"></h3>
                         <list-info :json='section'></list-info>
@@ -59,11 +59,11 @@
                     	<img v-lazy.container='section.thumbnail_pic_s'>
                         <img v-lazy.container='section.thumbnail_pic_s02'>
                     </div>
-                </router-link>
+                </a>
             </li>
             <!-- 3张小图 -->
             <li v-else-if="section.thumbnail_pic_s03">
-                <router-link :to="url(section.url)" class='threeSmall'>
+                <a href='javascript:;' class='threeSmall'>
                     <div class="news_title">
                         <h3 v-html="section.title"></h3>
                     </div>
@@ -75,7 +75,7 @@
                         </ul>
                     </div>
                     <list-info :json='section'></list-info>
-                </router-link>
+                </a>
             </li>
              <!-- 文字 -->
             <li v-else-if='section.type' id="lookHere">
