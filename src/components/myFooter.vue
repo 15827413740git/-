@@ -26,6 +26,11 @@ export default {
 				path:'/joke',
 				icoImg_src:'../../src/assets/img/xiaohua_ico.png'
 			},
+						{
+				title:'动漫',
+				path:'/Comic',
+				icoImg_src:'../../src/assets/img/Comic.png'
+			},
 			]
 		}
 	},

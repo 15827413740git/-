@@ -13,6 +13,7 @@ Router.prototype.go = function() {
 const index = () => import('@/page/index/index')
 const detail = () => import('@/page/detail/detail')
 const joke = () => import('@/page/joke/joke')
+const Comic = () => import('@/page/Comic/Comic')
 
 export default new Router({
     routes: [
@@ -38,6 +39,12 @@ export default new Router({
                     name: 'joke',
                     path: '/joke',
                     component: joke
+                },
+                                // joke页面
+                {
+                    name: 'Comic',
+                    path: '/Comic',
+                    component: Comic
                 },
             ]
         }
