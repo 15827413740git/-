@@ -4,6 +4,7 @@ import index_module from './index/index'
 import joke_module from './joke/index'
 import detail_module from './detail/index'
 import search_module from './search/index'
+import comic_module from './comic/index'
 Vue.use(Vuex)
 const state = {
 }
@@ -26,6 +27,7 @@ export default new Vuex.Store({
         index: index_module,
         joke:joke_module,
         detail: detail_module,
-        search: search_module
+        search: search_module,
+        comic:comic_module,
     }
 })

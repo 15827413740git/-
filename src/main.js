@@ -11,6 +11,7 @@ import '@/assets/css/reset.css'
 import '@/assets/css/icon.css'
 import '@/assets/css/transition.css'
 import '@/assets/css/global.css'
+import '@/assets/fonts/iconfont.css'
 
 // 第三方库
 import MintUI, { MessageBox, Toast, Indicator } from 'mint-ui'     
