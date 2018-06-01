@@ -4,9 +4,10 @@
             <ul >
             	<li v-for="item in tabbar">
             		<router-link :to="item.path">
-            			<img :src="item.icoImg_src"></img>
+            			<!--<img :src="item.icoImg_src"></img>-->
+            			<i :class="item.icoImg_src"></i>
+            			<span class="titleval">{{item.title}}</span>
             		</router-link>
-            		
             	</li>
             </ul>
     </div>
@@ -19,17 +20,26 @@ export default {
 			{
 				title:'新闻',
 				path:'/index',
-				icoImg_src:'../../src/assets/img/xinwen_ico.png'
+//				icoImg_src:'../../src/assets/img/xinwen_ico.png'
+				icoImg_src:'iconfont icon-wendang'
 			},
 			{
 				title:'笑话',
 				path:'/joke',
-				icoImg_src:'../../src/assets/img/xiaohua_ico.png'
+//				icoImg_src:'../../src/assets/img/xiaohua_ico.png'
+				icoImg_src:'iconfont icon-wode-line'
 			},
-						{
+			{
 				title:'动漫',
 				path:'/Comic',
-				icoImg_src:'../../src/assets/img/Comic.png'
+//				icoImg_src:'../../src/assets/img/Comic.png'
+				icoImg_src:'iconfont icon-dongman1'
+			},
+			{
+				title:'视频',
+				path:'/video',
+//				icoImg_src:'../../src/assets/img/Comic.png'
+				icoImg_src:'iconfont icon-bofang'
 			},
 			]
 		}
@@ -65,13 +75,18 @@ export default {
 				    justify-content: center;
 				    align-items: center;
 				    background: #FFFFFF;
-					img{
-						width: 0.8rem;
-						height: 0.8rem;
+					i{
+						/*width: 0.6rem;
+						height: 0.6rem;*/
+						font-size: 23px;
+					}
+					.titleval{
+						font-size: 15px;
 					}
 				}
 				.router-link-active{
-					background: #C8C8CD;
+					background:#c80852;
+					color: #fff;
 				}
 			}
 		

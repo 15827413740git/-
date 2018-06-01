@@ -5,6 +5,7 @@ export default{
 	state:{
 		comicstate:comicstate,
 		comicactive: 'news_gengxin',          // active的栏目
+		comicswiper: false                      // 页面是否在滑动
 	},
     getters: {
         activeMeta: state => {
@@ -23,7 +24,7 @@ export default{
         cache.setSession('comicstate', arr)
     },
     set_comicSwiper(state, val) {
-        state.comicstate = val
+        state.comicswiper = val
     }
 	},
 }

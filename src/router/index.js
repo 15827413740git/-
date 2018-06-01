@@ -14,6 +14,7 @@ const index = () => import('@/page/index/index')
 const detail = () => import('@/page/detail/detail')
 const joke = () => import('@/page/joke/joke')
 const Comic = () => import('@/page/Comic/Comic')
+const video = () => import('@/page/video/video')
 
 export default new Router({
     routes: [
@@ -40,11 +41,16 @@ export default new Router({
                     path: '/joke',
                     component: joke
                 },
-                                // joke页面
+                // Comic页面
                 {
                     name: 'Comic',
                     path: '/Comic',
                     component: Comic
+                },
+                {
+                    name: 'video',
+                    path: '/video',
+                    component: video
                 },
             ]
         }

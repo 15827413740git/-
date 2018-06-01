@@ -11,6 +11,7 @@
 </template>
 <script>
 import myFooter from './components/myFooter.vue'
+import myHeader from './components/myHeader.vue'
 export default {
 	components: {myFooter},
     data() {
